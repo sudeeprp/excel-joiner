@@ -11,9 +11,9 @@ COLTOMERGE = merger.COLTOMERGE
 def write_to_excel(records, output_filename):
     df = pd.DataFrame.from_dict(records)
     df.to_excel(output_filename, index_label='index',
-                columns=["candidate name", "completion time", "email",
+                columns=["participant name", "completion time", "participant email",
                          "gender", "id", "institute name", "joined as intern",
-                         "philips email id", "profile", "hm in wd", "name", "bu",
+                         "philips email id", "profile", "hm in wd", "name", "bu", "stream",
                          "c# .net", "c++", "python", "java", "javascript", "nodejs",
                          "react", "spring, springboot",
                          "wcf (windows communication foundation)", "wpf (windows presentation foundation)",
